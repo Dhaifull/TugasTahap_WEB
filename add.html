@@ -11,7 +11,7 @@
     </header>
     <main>
         <h2>Menambahkan Jadwal</h2>
-        <form action="save.html" method="post">
+        <form action="dashboard.html" method="post">
             <label for="name">Nama Jadwal:</label>
             <input type="text" id="name" name="name" required>
             <br><br>
@@ -31,8 +31,13 @@
                 <option value="Tugas">tugas</option>
             </select>
             <br><br>
-            
+
+            <label for="notes">Catatan:</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="30" placeholder="Tuliskan catatan tambahan di sini..."></textarea>
+            <br><br>
+
             <button type="submit">Simpan</button>
+            <a href="dashboard.html"><button type="button">Batal</button></a>
         </form>
     </main>
 </body>
