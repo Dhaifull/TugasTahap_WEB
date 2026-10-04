@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DailyFlow</title>
+  <title>DailyFlow - Tambah Jadwal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Add</h1>
-    </header>
-    <main>
-        <h2>Menambahkan Jadwal</h2>
-        <form action="dashboard.html" method="post">
-            <table>
+  <header>
+    <div class="header-container">
+      <h1>DailyFlow</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="add.html" class="active">Tambah Jadwal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Menambahkan Jadwal</h2>
+      
+      <form action="dashboard.html" method="post">
+        <table>
                 <tr>
                     <td><b><label for="name">Nama Jadwal:</label></b></td>
                     <td><input type="text" id="name" name="name" required></td>
@@ -31,8 +42,9 @@
                     <td>
                         <select id="category" name="category" required>
                             <option value="" disabled selected>-- Pilih Kategori --</option>
-                            <option value="Kuliah">main</option>
-                            <option value="Tugas">tugas</option>
+                            <option value="Kuliah">Kuliah</option>
+                            <option value="Tugas">Tugas</option>
+                            <option value="Pribadi">Pribadi</option>
                         </select>
                     </td>
                 </tr>
@@ -47,7 +59,12 @@
                     </td>
                 </tr>
             </table>
-        </form>
-    </main>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 DailyFlow. All rights reserved.</p>
+  </footer>
 </body>
 </html>
