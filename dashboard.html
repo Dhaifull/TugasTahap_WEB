@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DailyFlow</title>
+  <title>DailyFlow - Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Dashboard</h1>
-    </header>
+  <header>
+    <div class="header-container">
+      <h1>DailyFlow</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+          <li><a href="add.html">Tambah Jadwal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <hr>
-
-    <main>  
+  <main class="container">
+    <div class="card">
+      <div class="card-header">
         <h2>Daftar Jadwal</h2>
-        <a href="add.html">
-             <button type="button">Tambahkan</button>
-        </a>
-        <table border="0" cellpadding="15"> 
+      </div>
+
+      <div class="table-responsive">
+        <table class="schedule-table">
+          <thead>
             <tr>
-                 <td><b>Nama</b></td>
-                 <td><b>Waktu</b></td>
+              <th>Nama Kegiatan</th>
+              <th>Waktu</th>
+              <th>Kategori</th>
+              <th>Aksi</th>
             </tr>
+          </thead>
+          <tbody>
             <tr>
-                 <td>Ulang tahun</td>
-                 <td>2026-09-30</td>
-                 <td><a href="detail.html"><button type="button">Detail</button></a></td>
+              <td>Ulang Tahun</td>
+              <td><span class="date-badge">2026-09-30</span></td>
+              <td><span class="badge">Pribadi</span></td>
+              <td>
+                <a href="detail.html" class="btn btn-secondary">Detail</a>
+              </td>
             </tr>
+          </tbody>
         </table>
-    </main>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 DailyFlow. All rights reserved.</p>
+  </footer>
 </body>
 </html>
